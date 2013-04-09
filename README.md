@@ -4,6 +4,8 @@ Access the Quandl dataset API using Clojure
 
 ## Install
 
+You can install this dependency from the clojars.org repository
+
     [clj-quandl "0.1.0-SNAPSHOT"]
 
 ## Usage
