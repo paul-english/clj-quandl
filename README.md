@@ -2,6 +2,10 @@
 
 Access the Quandl dataset API using Clojure
 
+## Install
+
+    [clj-quandl "0.1.0-SNAPSHOT"]
+
 ## Usage
 
     (:use 'clj-quandl.core)
