@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [clojure-csv/clojure-csv "2.0.0-alpha1"]
-                 [clj-http "0.7.0"]])
+                 [clj-http "0.7.0"]]
+  :profiles {:dev {:dependencies [[incanter "1.4.1"]
+                                  [clj-time "0.5.0"]]}})

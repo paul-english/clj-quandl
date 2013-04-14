@@ -28,7 +28,9 @@
         response (client/get url)
         data (csv/parse-csv (:body response))]
     (if map-data
-      (map (partial zipmap (map keyword (first data)))
+      (map (partial zipmap (map #(-> (clojure.string/lower-case %)
+                                     (clojure.string/replace #"\s" "-")
+                                     keyword) (first data)))
            (rest data))
       data)))
 
